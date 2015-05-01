@@ -21,16 +21,16 @@ public class DiaryWebService {
      */
     @WebMethod(operationName = "clientName")
     public String clientName(@WebParam(name = "clientName") String clientName) {
-        return "Hello " + clientName + " !, Welcome to MaxDiary.com";
+        return "Hello " + clientName + " !, \nWelcome to DIARY KEEPER!\n";
     }
 
     @WebMethod(operationName = "setDate")
     public String setDate(@WebParam(name = "setDate") String date) {
-        return "This event happened on the:" + date;
+        return "This event happened on " + date;
     }
 
     @WebMethod(operationName = "setClientNote")
     public String setClientNote(@WebParam(name = "setNote") String setNote) {
-        return "Note as follow" + setNote;
+        return "\nNote as follow: " + setNote;
     }
 }
